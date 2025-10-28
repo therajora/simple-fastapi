@@ -62,10 +62,9 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: simple-fastapi.local
-    http:
+  - http:
       paths:
-      - path: /
+      - path: /simple-fastapi
         pathType: Prefix
         backend:
           service:
